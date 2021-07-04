@@ -46,10 +46,9 @@ body > div + div {
 	color: rgba(5,5,5,.7);
 }
 body > a {
-	background: #d81e068f;
-	border: solid 1px #d81e06;
-	color: #d81e06;
-    /*border: 3px solid rgba(255,0,0,.6);*/
+	background: rgb(216,30,6,0.15);
+    border: solid 1px #d81e06;
+    color: #d81e06;
     text-align: center;
     height: 38px;
     line-height: 38px;
@@ -59,13 +58,17 @@ body > a {
     text-decoration: none;
     display: block;
     cursor: pointer;
-    color: #fff;
+    transition: all .5s ease;
 }
-body > a:active {
-	transition: border .5s ease;
+body > a:hover {
+	color: #fff;
+	background: #d81e06;
+	border-color: transparent;
+}
+/*body > a:active {
 	color: #000;
 	border: 3px solid rgba(210,210,210,.6);
-}
+}*/
 body > div > a {
 	font-size: 14px;
 	margin-right: 10px;
